@@ -15,8 +15,8 @@ export default {
     }) => RNAudioTrack.init(options),
     play: () => RNAudioTrack.Play(),
     stop: () => RNAudioTrack.Stop(),
-    pause:()=> RNAudioTrack.Pause(),
-    write:(base64:String)=> RNAudioTrack.Write(base64),
-    setVolume:(gain:Number)=>RNAudioTrack.SetVolume(gain),
-    writeBytes(bytesArray:Uint8Array) => RNAudioTrack.WriteBytes(bytesArray)
+    pause:() => RNAudioTrack.Pause(),
+    write: (base64:String) => RNAudioTrack.Write(base64),
+    setVolume: (gain:Number) => RNAudioTrack.SetVolume(gain),
+    writeBytes: (bytesArray:Uint8Array) => RNAudioTrack.WriteBytes(bytesArray)
   }
