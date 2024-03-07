@@ -120,6 +120,16 @@ public class RNAudioTrackModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
+    public void WriteBytes(byte[] bytesArray) {
+        if (audioTrack != null && bytesArray != null) {
+            try {
+                audioTrack.write(bytesArray, 0, bytesArray.length);
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    @ReactMethod
     public void Write(String base64String) {
         byte[] bytesArray = Base64.decode(base64String, Base64.NO_WRAP);
         if (audioTrack != null && bytesArray != null) {
