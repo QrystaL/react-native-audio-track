@@ -18,5 +18,5 @@ export default {
     pause:() => RNAudioTrack.Pause(),
     write: (base64:String) => RNAudioTrack.Write(base64),
     setVolume: (gain:Number) => RNAudioTrack.SetVolume(gain),
-    writeBytes: (bytesArray:Uint8Array) => RNAudioTrack.WriteBytes(bytesArray)
+    writeString: (base64:String) => RNAudioTrack.WriteString(base64)
   }
